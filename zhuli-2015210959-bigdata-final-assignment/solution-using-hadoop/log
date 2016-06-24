@@ -1,0 +1,215 @@
+Running mapreduce example:
+16/06/24 21:01:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+rm: Cannot delete /user/root/pairs. Name node is in safe mode.
+16/06/24 21:01:31 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Deleted output
+Generatng random dataset 1 with 100 records.
+
+real	0m0.019s
+user	0m0.019s
+sys	0m0.000s
+Add line numbers for dataset 1.
+
+real	0m0.013s
+user	0m0.010s
+sys	0m0.003s
+Generatng random dataset 2 with 100 records.
+
+real	0m0.015s
+user	0m0.010s
+sys	0m0.005s
+Add line numbers for dataset 2.
+
+real	0m0.009s
+user	0m0.006s
+sys	0m0.003s
+Generating pairwise product for the two datasets.
+
+real	0m0.012s
+user	0m0.012s
+sys	0m0.000s
+16/06/24 21:01:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+put: `pairs': File exists
+
+real	0m1.125s
+user	0m2.070s
+sys	0m0.042s
+Running mapreduce job.
+16/06/24 21:01:34 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/06/24 21:01:34 WARN conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+16/06/24 21:01:34 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+16/06/24 21:01:35 INFO input.FileInputFormat: Total input paths to process : 1
+16/06/24 21:01:35 INFO mapreduce.JobSubmitter: number of splits:4
+16/06/24 21:01:35 WARN conf.Configuration: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+16/06/24 21:01:35 WARN conf.Configuration: mapred.output.value.class is deprecated. Instead, use mapreduce.job.output.value.class
+16/06/24 21:01:35 WARN conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+16/06/24 21:01:35 WARN conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+16/06/24 21:01:35 WARN conf.Configuration: mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+16/06/24 21:01:35 WARN conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+16/06/24 21:01:35 WARN conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+16/06/24 21:01:35 WARN conf.Configuration: mapred.output.key.class is deprecated. Instead, use mapreduce.job.output.key.class
+16/06/24 21:01:35 WARN conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+16/06/24 21:01:35 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1201373931_0001
+16/06/24 21:01:35 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+16/06/24 21:01:35 INFO mapreduce.Job: Running job: job_local1201373931_0001
+16/06/24 21:01:35 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+16/06/24 21:01:35 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+16/06/24 21:01:35 INFO mapred.LocalJobRunner: Waiting for map tasks
+16/06/24 21:01:35 INFO mapred.LocalJobRunner: Starting task: attempt_local1201373931_0001_m_000000_0
+16/06/24 21:01:35 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@396645ac
+16/06/24 21:01:35 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/pairs:0+67108864
+16/06/24 21:01:35 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+16/06/24 21:01:35 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+16/06/24 21:01:35 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+16/06/24 21:01:35 INFO mapred.MapTask: soft limit at 83886080
+16/06/24 21:01:35 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+16/06/24 21:01:35 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+16/06/24 21:01:36 INFO mapreduce.Job: Job job_local1201373931_0001 running in uber mode : false
+16/06/24 21:01:36 INFO mapreduce.Job:  map 0% reduce 0%
+16/06/24 21:01:41 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:42 INFO mapreduce.Job:  map 7% reduce 0%
+16/06/24 21:01:44 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:45 INFO mapreduce.Job:  map 11% reduce 0%
+16/06/24 21:01:47 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:48 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:48 INFO mapred.MapTask: Starting flush of map output
+16/06/24 21:01:48 INFO mapred.MapTask: Spilling map output
+16/06/24 21:01:48 INFO mapred.MapTask: bufstart = 0; bufend = 929902; bufvoid = 104857600
+16/06/24 21:01:48 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 25985564(103942256); length = 228833/6553600
+16/06/24 21:01:48 INFO mapred.MapTask: Finished spill 0
+16/06/24 21:01:48 INFO mapred.Task: Task:attempt_local1201373931_0001_m_000000_0 is done. And is in the process of committing
+16/06/24 21:01:48 INFO mapred.LocalJobRunner: map
+16/06/24 21:01:48 INFO mapred.Task: Task 'attempt_local1201373931_0001_m_000000_0' done.
+16/06/24 21:01:48 INFO mapred.LocalJobRunner: Finishing task: attempt_local1201373931_0001_m_000000_0
+16/06/24 21:01:48 INFO mapred.LocalJobRunner: Starting task: attempt_local1201373931_0001_m_000001_0
+16/06/24 21:01:48 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@1a1ff7d1
+16/06/24 21:01:48 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/pairs:67108864+67108864
+16/06/24 21:01:48 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+16/06/24 21:01:48 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+16/06/24 21:01:48 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+16/06/24 21:01:48 INFO mapred.MapTask: soft limit at 83886080
+16/06/24 21:01:48 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+16/06/24 21:01:48 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+16/06/24 21:01:48 INFO mapreduce.Job:  map 100% reduce 0%
+16/06/24 21:01:54 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:54 INFO mapreduce.Job:  map 33% reduce 0%
+16/06/24 21:01:57 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:57 INFO mapreduce.Job:  map 38% reduce 0%
+16/06/24 21:01:59 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:01:59 INFO mapred.MapTask: Starting flush of map output
+16/06/24 21:01:59 INFO mapred.MapTask: Spilling map output
+16/06/24 21:01:59 INFO mapred.MapTask: bufstart = 0; bufend = 922401; bufvoid = 104857600
+16/06/24 21:01:59 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 25993028(103972112); length = 221369/6553600
+16/06/24 21:01:59 INFO mapred.MapTask: Finished spill 0
+16/06/24 21:01:59 INFO mapred.Task: Task:attempt_local1201373931_0001_m_000001_0 is done. And is in the process of committing
+16/06/24 21:01:59 INFO mapred.LocalJobRunner: map
+16/06/24 21:01:59 INFO mapred.Task: Task 'attempt_local1201373931_0001_m_000001_0' done.
+16/06/24 21:01:59 INFO mapred.LocalJobRunner: Finishing task: attempt_local1201373931_0001_m_000001_0
+16/06/24 21:01:59 INFO mapred.LocalJobRunner: Starting task: attempt_local1201373931_0001_m_000002_0
+16/06/24 21:01:59 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@75c45809
+16/06/24 21:01:59 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/pairs:134217728+67108864
+16/06/24 21:01:59 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+16/06/24 21:01:59 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+16/06/24 21:01:59 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+16/06/24 21:01:59 INFO mapred.MapTask: soft limit at 83886080
+16/06/24 21:01:59 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+16/06/24 21:01:59 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+16/06/24 21:02:00 INFO mapreduce.Job:  map 100% reduce 0%
+16/06/24 21:02:05 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:02:06 INFO mapreduce.Job:  map 59% reduce 0%
+16/06/24 21:02:08 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:02:09 INFO mapreduce.Job:  map 63% reduce 0%
+16/06/24 21:02:11 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:02:11 INFO mapred.MapTask: Starting flush of map output
+16/06/24 21:02:11 INFO mapred.MapTask: Spilling map output
+16/06/24 21:02:11 INFO mapred.MapTask: bufstart = 0; bufend = 986018; bufvoid = 104857600
+16/06/24 21:02:11 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 25988576(103954304); length = 225821/6553600
+16/06/24 21:02:11 INFO mapred.MapTask: Finished spill 0
+16/06/24 21:02:11 INFO mapred.Task: Task:attempt_local1201373931_0001_m_000002_0 is done. And is in the process of committing
+16/06/24 21:02:11 INFO mapred.LocalJobRunner: map
+16/06/24 21:02:11 INFO mapred.Task: Task 'attempt_local1201373931_0001_m_000002_0' done.
+16/06/24 21:02:11 INFO mapred.LocalJobRunner: Finishing task: attempt_local1201373931_0001_m_000002_0
+16/06/24 21:02:11 INFO mapred.LocalJobRunner: Starting task: attempt_local1201373931_0001_m_000003_0
+16/06/24 21:02:11 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@209485d
+16/06/24 21:02:11 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/pairs:201326592+41833408
+16/06/24 21:02:11 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+16/06/24 21:02:11 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+16/06/24 21:02:11 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+16/06/24 21:02:11 INFO mapred.MapTask: soft limit at 83886080
+16/06/24 21:02:11 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+16/06/24 21:02:11 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+16/06/24 21:02:11 INFO mapreduce.Job:  map 100% reduce 0%
+16/06/24 21:02:17 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:02:17 INFO mapreduce.Job:  map 89% reduce 0%
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: map > map
+16/06/24 21:02:18 INFO mapred.MapTask: Starting flush of map output
+16/06/24 21:02:18 INFO mapred.MapTask: Spilling map output
+16/06/24 21:02:18 INFO mapred.MapTask: bufstart = 0; bufend = 623779; bufvoid = 104857600
+16/06/24 21:02:18 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26071568(104286272); length = 142829/6553600
+16/06/24 21:02:18 INFO mapred.MapTask: Finished spill 0
+16/06/24 21:02:18 INFO mapred.Task: Task:attempt_local1201373931_0001_m_000003_0 is done. And is in the process of committing
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: map
+16/06/24 21:02:18 INFO mapred.Task: Task 'attempt_local1201373931_0001_m_000003_0' done.
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: Finishing task: attempt_local1201373931_0001_m_000003_0
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: Map task executor complete.
+16/06/24 21:02:18 INFO mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.yarn.util.LinuxResourceCalculatorPlugin@d7adfa0
+16/06/24 21:02:18 INFO mapred.Merger: Merging 4 sorted segments
+16/06/24 21:02:18 INFO mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 3871496 bytes
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: 
+16/06/24 21:02:18 WARN conf.Configuration: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+16/06/24 21:02:18 INFO mapreduce.Job:  map 100% reduce 0%
+16/06/24 21:02:18 INFO mapred.Task: Task:attempt_local1201373931_0001_r_000000_0 is done. And is in the process of committing
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: 
+16/06/24 21:02:18 INFO mapred.Task: Task attempt_local1201373931_0001_r_000000_0 is allowed to commit now
+16/06/24 21:02:18 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1201373931_0001_r_000000_0' to hdfs://localhost:9000/user/root/output/_temporary/0/task_local1201373931_0001_r_000000
+16/06/24 21:02:18 INFO mapred.LocalJobRunner: reduce > reduce
+16/06/24 21:02:18 INFO mapred.Task: Task 'attempt_local1201373931_0001_r_000000_0' done.
+16/06/24 21:02:19 INFO mapreduce.Job:  map 100% reduce 100%
+16/06/24 21:02:19 INFO mapreduce.Job: Job job_local1201373931_0001 completed successfully
+16/06/24 21:02:19 INFO mapreduce.Job: Counters: 32
+	File System Counters
+		FILE: Number of bytes read=3905944
+		FILE: Number of bytes written=14874075
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=889022336
+		HDFS: Number of bytes written=5157546
+		HDFS: Number of read operations=46
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=7
+	Map-Reduce Framework
+		Map input records=4000000
+		Map output records=204716
+		Map output bytes=3462100
+		Map output materialized bytes=3871556
+		Input split bytes=408
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=204716
+		Reduce shuffle bytes=0
+		Reduce input records=204716
+		Reduce output records=204716
+		Spilled Records=409432
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=438
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=3605528576
+	File Input Format Counters 
+		Bytes Read=243172288
+	File Output Format Counters 
+		Bytes Written=5157546
+
+real	0m46.114s
+user	0m49.935s
+sys	0m0.414s
+16/06/24 21:02:20 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+The final result is in "output".
+
+real	0m51.190s
+user	0m58.663s
+sys	0m0.653s

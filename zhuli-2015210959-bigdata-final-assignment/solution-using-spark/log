@@ -1,0 +1,118 @@
+Running spark example:
+Generatng random dataset 1 with 100 records.
+
+real	0m0.011s
+user	0m0.011s
+sys	0m0.000s
+Generatng random dataset 2 with 100 records.
+
+real	0m0.011s
+user	0m0.005s
+sys	0m0.005s
+Running spark job.
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/06/24 21:02:21 INFO SparkContext: Running Spark version 1.5.2
+16/06/24 21:02:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/06/24 21:02:22 WARN Utils: Your hostname, asus resolves to a loopback address: 127.0.1.1; using 183.173.27.193 instead (on interface wlan0)
+16/06/24 21:02:22 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+16/06/24 21:02:22 INFO SecurityManager: Changing view acls to: root
+16/06/24 21:02:22 INFO SecurityManager: Changing modify acls to: root
+16/06/24 21:02:22 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+16/06/24 21:02:22 INFO Slf4jLogger: Slf4jLogger started
+16/06/24 21:02:23 INFO Remoting: Starting remoting
+16/06/24 21:02:23 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@183.173.27.193:38765]
+16/06/24 21:02:23 INFO Utils: Successfully started service 'sparkDriver' on port 38765.
+16/06/24 21:02:23 INFO SparkEnv: Registering MapOutputTracker
+16/06/24 21:02:23 INFO SparkEnv: Registering BlockManagerMaster
+16/06/24 21:02:23 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-a75e1d88-eeab-449d-a7ba-1dc07433bca4
+16/06/24 21:02:23 INFO MemoryStore: MemoryStore started with capacity 530.3 MB
+16/06/24 21:02:23 INFO HttpFileServer: HTTP File server directory is /tmp/spark-4e46e710-55c3-4b22-8740-dd789df72601/httpd-ca56d5ff-0388-4287-bf97-9578a3b7e428
+16/06/24 21:02:23 INFO HttpServer: Starting HTTP Server
+16/06/24 21:02:23 INFO Utils: Successfully started service 'HTTP file server' on port 49627.
+16/06/24 21:02:23 INFO SparkEnv: Registering OutputCommitCoordinator
+16/06/24 21:02:23 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+16/06/24 21:02:23 INFO SparkUI: Started SparkUI at http://183.173.27.193:4040
+16/06/24 21:02:23 INFO Utils: Copying /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py to /tmp/spark-4e46e710-55c3-4b22-8740-dd789df72601/userFiles-30253b44-5fd5-45b4-a977-ee917026340f/jaccard-similarity.py
+16/06/24 21:02:23 INFO SparkContext: Added file file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py at file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py with timestamp 1466773343535
+16/06/24 21:02:23 WARN MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+16/06/24 21:02:23 INFO Executor: Starting executor ID driver on host localhost
+16/06/24 21:02:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50853.
+16/06/24 21:02:23 INFO NettyBlockTransferService: Server created on 50853
+16/06/24 21:02:23 INFO BlockManagerMaster: Trying to register BlockManager
+16/06/24 21:02:23 INFO BlockManagerMasterEndpoint: Registering block manager localhost:50853 with 530.3 MB RAM, BlockManagerId(driver, localhost, 50853)
+16/06/24 21:02:23 INFO BlockManagerMaster: Registered BlockManager
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(98672) called with curMem=0, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 96.4 KB, free 530.2 MB)
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(8646) called with curMem=98672, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 8.4 KB, free 530.2 MB)
+16/06/24 21:02:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:50853 (size: 8.4 KB, free: 530.3 MB)
+16/06/24 21:02:24 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:-2
+16/06/24 21:02:24 INFO FileInputFormat: Total input paths to process : 1
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(98728) called with curMem=107318, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 96.4 KB, free 530.1 MB)
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(8646) called with curMem=206046, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 8.4 KB, free 530.1 MB)
+16/06/24 21:02:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:50853 (size: 8.4 KB, free: 530.3 MB)
+16/06/24 21:02:24 INFO SparkContext: Created broadcast 1 from textFile at NativeMethodAccessorImpl.java:-2
+16/06/24 21:02:24 INFO FileInputFormat: Total input paths to process : 1
+16/06/24 21:02:24 INFO SparkContext: Starting job: collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49
+16/06/24 21:02:24 INFO DAGScheduler: Got job 0 (collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49) with 1 output partitions
+16/06/24 21:02:24 INFO DAGScheduler: Final stage: ResultStage 0(collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49)
+16/06/24 21:02:24 INFO DAGScheduler: Parents of final stage: List()
+16/06/24 21:02:24 INFO DAGScheduler: Missing parents: List()
+16/06/24 21:02:24 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[7] at collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49), which has no missing parents
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(10880) called with curMem=214692, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 10.6 KB, free 530.1 MB)
+16/06/24 21:02:24 INFO MemoryStore: ensureFreeSpace(5112) called with curMem=225572, maxMem=556038881
+16/06/24 21:02:24 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 5.0 KB, free 530.1 MB)
+16/06/24 21:02:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:50853 (size: 5.0 KB, free: 530.3 MB)
+16/06/24 21:02:24 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+16/06/24 21:02:24 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[7] at collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49)
+16/06/24 21:02:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+16/06/24 21:02:24 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2691 bytes)
+16/06/24 21:02:24 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/06/24 21:02:24 INFO Executor: Fetching file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py with timestamp 1466773343535
+16/06/24 21:02:24 INFO Utils: /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py has been previously copied to /tmp/spark-4e46e710-55c3-4b22-8740-dd789df72601/userFiles-30253b44-5fd5-45b4-a977-ee917026340f/jaccard-similarity.py
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input1:0+2648
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 4, boot = 1, init = 3, finish = 0
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 40, boot = 1, init = 38, finish = 1
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 38, boot = 2, init = 35, finish = 1
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 39, boot = 2, init = 36, finish = 1
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 42, boot = 2, init = 39, finish = 1
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 39, boot = 2, init = 36, finish = 1
+16/06/24 21:02:24 INFO PythonRunner: Times: total = 110, boot = 104, init = 6, finish = 0
+16/06/24 21:02:24 INFO HadoopRDD: Input split: file:/root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/input2:0+2606
+16/06/24 21:02:25 INFO PythonRunner: Times: total = 38, boot = 0, init = 37, finish = 1
+16/06/24 21:02:25 INFO PythonRunner: Times: total = 299, boot = 2, init = 255, finish = 42
+16/06/24 21:02:25 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 12712 bytes result sent to driver
+16/06/24 21:02:25 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 508 ms on localhost (1/1)
+16/06/24 21:02:25 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+16/06/24 21:02:25 INFO DAGScheduler: ResultStage 0 (collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49) finished in 0.523 s
+16/06/24 21:02:25 INFO DAGScheduler: Job 0 finished: collect at /root/zhuli-2015210959-bigdata-final-assignment/solution-using-spark/jaccard-similarity.py:49, took 0.588567 s
+16/06/24 21:02:25 INFO SparkContext: Invoking stop() from shutdown hook
+16/06/24 21:02:25 INFO SparkUI: Stopped Spark web UI at http://183.173.27.193:4040
+16/06/24 21:02:25 INFO DAGScheduler: Stopping DAGScheduler
+16/06/24 21:02:25 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/06/24 21:02:25 INFO MemoryStore: MemoryStore cleared
+16/06/24 21:02:25 INFO BlockManager: BlockManager stopped
+16/06/24 21:02:25 INFO BlockManagerMaster: BlockManagerMaster stopped
+16/06/24 21:02:25 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/06/24 21:02:25 INFO SparkContext: Successfully stopped SparkContext
+16/06/24 21:02:25 INFO ShutdownHookManager: Shutdown hook called
+16/06/24 21:02:25 INFO ShutdownHookManager: Deleting directory /tmp/spark-4e46e710-55c3-4b22-8740-dd789df72601/pyspark-eccf1a97-95b8-4384-a6dc-d0a7f42e25ea
+16/06/24 21:02:25 INFO ShutdownHookManager: Deleting directory /tmp/spark-4e46e710-55c3-4b22-8740-dd789df72601
+
+real	0m4.311s
+user	0m5.540s
+sys	0m0.248s
+The final result is in "output".
+
+real	0m4.335s
+user	0m5.557s
+sys	0m0.256s

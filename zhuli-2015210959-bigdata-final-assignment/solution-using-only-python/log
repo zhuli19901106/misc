@@ -1,0 +1,18 @@
+Running single-thread example:
+Generating random dataset 1 with 100 records.
+Generating random dataset 1 with 100 records.
+Computing their pairwise Jaccard similarity.
+The final result is in the file "output".
+
+real	0m0.058s
+user	0m0.046s
+sys	0m0.013s
+Running multithread example:
+Generating random dataset 1 with 100 records.
+Generating random dataset 1 with 100 records.
+Computing their pairwise Jaccard similarity.
+The final result is in the file "output-multithread".
+
+real	0m0.049s
+user	0m0.042s
+sys	0m0.039s
